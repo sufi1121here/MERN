@@ -1,6 +1,5 @@
-import { useState } from 'react';
 
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import FeatureCard from './components/FeatureCard';
 import FeaturedCourses from './components/FeaturedCourses'
 import About from './components/About';
@@ -11,12 +10,11 @@ import Footer from './components/Footer';
 import PhotoCollage from './components/PhotoCollage';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <div>
 
-      <Header />
+      <Navbar />
       <FeatureCard />
       <FeaturedCourses />
       <About />

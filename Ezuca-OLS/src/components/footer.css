@@ -64,7 +64,7 @@
     float: left;
     color: #757686;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 
@@ -77,22 +77,16 @@
     margin-bottom: 25px;
 }
 
-.social-media-icons {
+.social-icons {
     display: flex;
     justify-content: center;
-
     gap: 15px;
-  
 }
 
-.social-media-icons svg {
-    font-size: 24px;
-    color: #3e4349;
-    transition: color 0.3s ease;
-}
 
-.social-media-icons svg:hover {
-    color: #0ca37d;
+.social-icons a:hover {
+    border-radius: 10px;
+    background-color: #c4d3a1;
 }
 
 .footer-bottom {

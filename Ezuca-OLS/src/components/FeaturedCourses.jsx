@@ -26,6 +26,9 @@ const FeaturedCourses = () => {
           </div>
         </div>
 
+
+
+        
         {/* Card 2 */}
         <div className="featured-course-card flex overflow-hidden">
           <img src="images/2.jpg" alt="Course Image" className="w-1/3 object-cover" />

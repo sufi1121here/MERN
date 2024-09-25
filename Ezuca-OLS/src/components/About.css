@@ -1,11 +1,11 @@
 .about-section {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping for responsiveness */
-    justify-content:center; /* Adds space between text and image */
-    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+    justify-content:center; 
+    align-items: flex-start;
     padding: 20px;
     background-color: #f8f9fa;
-    gap: 40px; /* Adds space between text and image */
+    gap: 40px;
 }
   
   .text-section {
@@ -30,24 +30,24 @@
   
   .stats {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping the stats into rows */
-    justify-content: center; /* Centers the items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 10px;
-    max-width: 400px; /* Limit the total width of the stats section */
+    max-width: 400px; 
     margin: 0 auto;
 }
 
 .stat {
-    flex: 1 1 45%; /* Make each stat take 45% width to fit 2 per row */
+    flex: 1 1 45%;
     text-align: center;
-    margin-bottom: 20px; /* Add some space between rows */
+    margin-bottom: 20px;
 }
 
 .stat h2 {
     font-weight: 600;
     font-size: 2.5rem;
-    color: #28a745; /* Green color */
+    color: #28a745;
 }
 
   

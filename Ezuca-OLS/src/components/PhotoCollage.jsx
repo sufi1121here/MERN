@@ -5,7 +5,7 @@ import './PhotoCollage.css';
 
 const PhotoCollage = () => {
   return (
-    <div className="collage-container">
+    <div className="special">
       <div className="collage">
         <img src="images/a.jpg" alt="Image 1" />
         <img src="images/b.jpg" alt="Image 2" />

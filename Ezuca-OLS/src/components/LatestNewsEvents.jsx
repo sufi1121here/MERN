@@ -32,6 +32,10 @@ const LatestNewsEvents = () => {
     },
   ];
 
+
+
+
+  
   return (
     <section className="latest-news-events">
       <div className="container mt-14 mx-auto px-4">

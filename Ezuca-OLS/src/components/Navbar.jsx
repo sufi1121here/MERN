@@ -2,13 +2,16 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Navbar = () => {
   return (
     <div className="relative">
-      {/* Top Bar with Email and Phone */}
+
+
+      {/* Top Bar */}
       <div className="bg-white pr-6 pl-6 pt-2 pb-2 shadow-md">
         <div className="flex justify-between items-center">
-          {/* Left Side with Email and Phone */}
+
+
           <div className="flex items-center divide-x divide-gray-400">
             <div className="flex items-center pr-4">
               <FontAwesomeIcon icon={faEnvelope} className="text-green-500 px-2 mr-2" />
@@ -20,7 +23,10 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Right Side Search Input */}
+
+
+
+
           <div className="flex items-center">
             <input type="search" placeholder="What would you like to learn?" className="text-sm border p-3 bg-blue-300 bg-opacity-10 outline-none"/>
             <button className="text-white bg-green-500 px-6 py-3">
@@ -33,12 +39,15 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Hero Section with Background Image */}
-      <header className="bg-cover bg-center relative h-[110vh]" style={{ backgroundImage: "url('images/hero-bg.jpg')" }}>
-        {/* Overlay */}
+
+
+
+
+      <header className="bg-cover bg-center relative h-[110vh]" style={{ backgroundImage: "url('images/hero-bg.jpg')" }}>       
         <div className="absolute inset-0 bg-gray-950 bg-opacity-60"></div>
 
-        {/* Ezuca Logo and Navigation (Overlapping the Image) */}
+        
+
         <div className="absolute top-0 left-0 w-full z-20 bg-white bg-opacity-40 ">
           <div className="container mx-auto flex justify-between items-center py-4 px-6">
             <div className="text-2xl font-bold text-white"><img src="images/foot-logo.png" alt="logo" /></div>
@@ -52,7 +61,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Left-aligned Content */}
+
+       
        
           <div className="relative ml-14 z-10 flex flex-col items-start justify-center h-full text-left text-white px-12 max-w-[600px]">
             <p className='text-sm mt-5 mb-4 font-bold text-green-600' >GET STARTED WITH ONLINE COURSES</p>
@@ -70,4 +80,4 @@ const Header = () => {
     </div>
   );
 };
-export default Header;
+export default Navbar;
