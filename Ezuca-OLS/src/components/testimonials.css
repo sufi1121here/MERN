@@ -1,0 +1,59 @@
+.testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.testimonial-images {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.testimonial-image.active {
+    opacity: 1;
+    transform: scale(1.2); /* Scale up the active image */
+}
+
+.testimonial-description {
+    max-width: 60%;
+    text-align: left;
+    margin-left: 20px;
+    min-height: 150px; /* Set a fixed or min height for the text container */
+}
+
+.testimonial-description p {
+    font-size: 20px;
+    color: #383749;
+    margin-bottom: 10px;
+}
+
+.testimonial-description span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #28a745; /* Green color */
+}
+
+.testimonial-description span::after {
+    content: ' - University in Oxford';
+    font-weight: normal;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Add this to prevent layout shifts */
+.testimonial-slider {
+    min-height: 250px; /* Adjust this based on the overall height needed */
+}
