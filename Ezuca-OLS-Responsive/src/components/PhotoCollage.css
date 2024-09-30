@@ -1,0 +1,26 @@
+.special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e2dcdc;
+  }
+  
+  .collage {
+    display: grid;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+    width: 90vw;
+    max-width: 1200px;
+  }
+  
+  .collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
