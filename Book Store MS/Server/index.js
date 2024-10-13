@@ -6,6 +6,9 @@ import './db.js'
 import { AdminRouter } from './routes/auth.js'
 import { StudentRouter } from './routes/student.js'
 import { BookRouter } from './routes/book.js'
+import { Student } from './models/Student.js'
+import { Admin } from './models/Admin.js'
+import { Book } from './models/Book.js'
 
 const app = express()
 app.use(express.json())
@@ -19,6 +22,17 @@ dotenv.config()
 app.use('/auth', AdminRouter)
 app.use('/student', StudentRouter)
 app.use('/book', BookRouter)
+
+app.get('/dashboard', async (req, res) => {
+    try{
+        const student = await Student.countDocuments()
+        const admin = await Admin.countDocuments()
+        const book = await Book.countDocuments()
+        return res.json({ok: true, student, admin, book})
+    }catch(err){
+        return res.json(err)
+    }
+})
 
 app.listen(process.env.PORT, () => {
     console.log("Server is Running");
