@@ -23,16 +23,22 @@ app.use('/auth', AdminRouter)
 app.use('/student', StudentRouter)
 app.use('/book', BookRouter)
 
-app.get('/dashboard', async (req, res) => {
+app.get('/dashboard', async (req, res, next) => {
     try{
         const student = await Student.countDocuments()
         const admin = await Admin.countDocuments()
         const book = await Book.countDocuments()
         return res.json({ok: true, student, admin, book})
     }catch(err){
-        return res.json(err)
+        next(err);
     }
 })
+
+// Global Error Handler
+app.use((err, req, res, next) => {
+    console.error("Global Error Handler:", err);
+    res.status(500).json({ success: false, message: "Internal Server Error", error: err.message || err });
+});
 
 app.listen(process.env.PORT, () => {
     console.log("Server is Running");
